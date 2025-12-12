@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="a" height="380px">
+
+<div class="image1">
+<img src="nature.jpg"alt=nature width="380px" height="180px" >
+</div>
+<div class="Text">
+<h2>heading:-</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis quae aliquid in laudantium. Consequuntur, explicabo magni vel omnis voluptatum eveniet, iusto sapiente tempore quae in nisi distinctio eius molestias!</p>
+    <span id="first" style="display: none;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi, neque, sit repudiandae rem laboriosam hic pariatur laudantium debitis harum nihil deleniti quam facere consequatur a amet. Reiciendis molestias inventore distinctio, dicta neque dolores omnis, laboriosam sint temporibus ex voluptates.
+    </span>
+</div>
+<span class="button1" >
+<button id="butt" onclick="readmore()">READ MORE</button>
+</span>
+</div>
+
+  <div class="b" height="380px">
+
+<div class="image2">
+<img src="nature2.jpg"alt=nature width="380px" height="180px" >
+</div>
+<div class="Text2">
+<h2>heading:-</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis quae aliquid in laudantium. Consequuntur, explicabo magni vel omnis voluptatum eveniet, iusto sapiente tempore quae in nisi distinctio eius molestias!</p>
+    <span id="second" style="display: none;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi, neque, sit repudiandae rem laboriosam hic pariatur laudantium debitis harum nihil deleniti quam facere consequatur a amet. Reiciendis molestias inventore distinctio, dicta neque dolores omnis, laboriosam sint temporibus ex voluptates.
+    </span>
+</div>
+<span class="button2" >
+<button id="butt2" onclick="READMORE()">READ MORE</button>
+</span>
+</div>
+
+
+
+ <div class="c" >
+
+<div class="image3">
+<img src="nature3.jpg"alt=nature width="250" height="200px" >
+</div>
+<div class="Text3">
+<h2>About Me </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis quae aliquid in laudantium. Consequuntur, explicabo magni vel omnis voluptatum eveniet, iusto sapiente tempore quae in nisi distinctio eius molestias!</p>
+   
+</div>
+</div>
+
+<div class="d">
+<h3 class="top">Popular Post</h3>
+<div class="s">
+  <img src="nature2.jpg"  alt="nature" width="35px" height="35px">
+  <b >loren</b>
+</div>
+<div class="u"><img src="nature3.jpg"  alt="nature" width="35px" height="35px">
+  <b >Ipusm</b>
+</div>
+<div class="m"><img src="nature4.jpg"  alt="nature" width="35px" height="35px">
+  <b >Dorum</b>
+</div>
+<div class="h"><img src="nature.jpg" alt="nature" width="35px" height="35px">
+  <b >Mingum</b>
+</div>
+</div>
+<div class="e">
+  <h4 class="last">Tags</h4>
+  <div class="f">
+  <li><button>Travel</button></li>
+ <li><button>New York</button></li>
+ <li><button>London</button></li>
+ <li><button>IKEA</button></li>
+<li><button>DIY</button></li>
+<li><button>Ideas</button></li>
+<li><button>Baby</button></li>
+<li><button>Family</button></li>
+<li><button>News</button></li>
+<li><button>Clothing</button></li>
+<li><button>Shopping</button></li>
+<li><button>Sports</button></li>
+<li><button>Games</button></li>
+  </div>
+
+</div>
+
+
+
+
+<span class="btns">
+  <button>PREVIOUS</button>
+  <button>NEXT</button>
+</span>
+
+
+
+   
+</body>
+<script>
+    function readmore(){
+
+        const x=document.getElementById('first');
+        const y=document.getElementById('butt');
+        const z=document.getElementsByClassName('a');
+      if (x.style.display === "none") {
+    x.style.display = "inline";
+   
+    y.innerHTML = "READ LESS";
+     z.style.height="500px";
+
+  } else {
+    x.style.display = "none";
+    y.innerHTML = "READ MORE";
+  }
+
+
+    }
+
+ function READMORE(){
+
+        const x=document.getElementById('second');
+        const y=document.getElementById('butt2');
+        const z=document.getElementsByClassName('b');
+      if (x.style.display === "none") {
+    x.style.display = "inline";
+   
+    y.innerHTML = "READ LESS";
+     z.style.height="500px";
+
+  } else {
+    x.style.display = "none";
+    y.innerHTML = "READ MORE";
+  }
+
+
+    }
+
+
+</script>
+</html>
